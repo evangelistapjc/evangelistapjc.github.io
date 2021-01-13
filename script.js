@@ -99,6 +99,7 @@ TxtType.prototype.tick = function() {
     }, delta/1.5);
 };
 
+// RUNS SCRIPT WHEN PAGE LOADS
 window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
@@ -110,7 +111,33 @@ window.onload = function() {
     }
     // INJECT CSS
     var css = document.createElement("style");
-    css.type = "text/css";
+    // css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
+
+    if ( $(window).width() <= 768 ) {
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; font-size: 75%;}";
+    } else {  
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; font-size: 100%;}";
+    }
 };
+
+function checkWindow() {
+    if ( $(window).width() <= 992 ) {
+        $('.container').removeClass('container').addClass('container-fluid');
+    } else {  
+        $('.container').removeClass('container-fluid').addClass('container');
+    }
+    
+    // if ( $(window).width() <= 700 ) {
+    //     $('.container').removeClass('container').addClass('container-fluid');
+    //     $('.project-resize-big-js').removeClass('col-8 offset-2').addClass('col-12');
+    //     $('.project-resize-js').removeClass('col-6').addClass('col-12');
+    // } else {  
+    //     $('.container').removeClass('container-fluid').addClass('container');
+    //     $('.project-resize-big-js').removeClass('col-12').addClass('col-8 offset-2');
+    //     $('.project-resize-js').removeClass('col-12').addClass('col-6');
+    // }
+}
+
+$(window).resize(checkWindow);

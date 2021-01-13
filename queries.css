@@ -1,0 +1,147 @@
+@media only screen and (max-width: 1000px) {
+    .container {
+        max-width: 120%;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .resume-logos {
+        display:none
+    }
+
+    .uci {
+        display:none
+    }
+    
+    .lwa {
+        display:none
+    }
+    
+    .apple {
+        display:none
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* RESUSABLE COMPONENTS */
+    section,
+    footer {
+        padding: 40px 0;
+    }
+    
+    /* HEADER */
+    header:before {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.99)), url(images/main_photo_2.jpg);
+    }
+
+    .intro-header {
+        color: #fff;
+        text-align: center;
+        margin: 100px 0;
+    }
+
+    .main-nav li:last-child {
+        margin: 10px 5px 0 10px;
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    /* REUSABLE COMPONENTS */
+    html,
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 250%;
+    }
+
+    .col-8, .col-sm-8,
+    .col-4, .col-sm-4 {
+        padding: 0px 0px;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    /* NAVIGATION */
+    .main-nav {
+        right: 0px;
+    }
+
+    .main-nav li {
+        margin: 5px 5% 0 0;
+    }
+    
+    .main-nav li:last-child {
+        margin: 5px 5% 0 0;
+    }
+
+    /* INTRO SECTION */
+
+    .main-terminal {
+        padding: 20px 0px 1px;
+        font-size: 90%;
+    }
+    
+    /* RESUME SECTION */    
+    .resume-box {
+        width: 90%;
+        margin: 8vh auto;
+    }
+
+    .main-work:nth-child(n+1) .resume-box:after {
+        border-bottom: 1px solid #000000;
+        content: " ";
+        display: block;
+        margin: 30px 100px;
+    }
+
+    .resume-place {
+        font-size: 110%;
+    }
+    
+    .resume-description {
+        margin: 20px 0 0 5px;
+    }
+    
+    .resume-coursework li {
+        margin: 0 0 5px 20px;
+        width: 145%;
+        font-size: 100%;
+    }
+    
+    .resume-right-adjust p {
+        width: 140%;
+        margin-left: -45px;
+    }
+
+    .resume-right-adjust p:last-of-type {
+        margin-left: -45px;
+    }
+    
+    .skills {
+        margin: 10px 10px;
+    }
+
+    /* SKILLS */
+    .icon {
+        margin: 5px 0px 0px;
+        font-size: 100%;
+    }
+
+    /* PROJECTS */
+    .projects-box p {
+        font-size: 125%;
+        padding: 10px 10px;
+    }
+
+    .big-projects-picture {
+        height: 25vh;
+    }
+    
+    .small-projects-picture {
+        height: 25vh;
+    }
+}
