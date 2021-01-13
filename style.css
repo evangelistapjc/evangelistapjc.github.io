@@ -388,6 +388,7 @@ header:before {
 
 .skills li {
     display: inline-block;
+    list-style: none;
 }
 
 /****************
