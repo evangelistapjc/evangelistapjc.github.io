@@ -25,46 +25,6 @@ body {
     font-family: 'Lato', 'Arial', sans-serif;
     text-rendering: optimizeLegibility;
     background-color: #fff;
-<<<<<<< HEAD
-    overflow-x: hidden;
-    color: #000;
-    font-weight: 300;
-    font-size: 14px;
-}
-
-.footer {
-    width: 100%;
-}
-
-.footer-top {
-    width: 100%;
-    
-}
-
-.menu {
-    width: 100%;
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-.menu-column-section {
-    width: 100%;
-}
-
-.menu-column-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-column-item {
-    list-style: none;
-    margin-left: -32px;
-    padding: 5px;
-}
-=======
     scroll-behavior: smooth;
     overflow-x: hidden;
     color: #555;
@@ -585,4 +545,3 @@ footer h1:after {
     margin: 0 20px;
     color: #ffffff;
 }
->>>>>>> d6c7808a02961d8099fdbed4b947bc8e2e058a3c
