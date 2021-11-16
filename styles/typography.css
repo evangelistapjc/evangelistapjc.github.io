@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+@-webkit-keyframes fadein {
+    from { opacity: 0.0;}
+    to { opacity: 1.0;}
+}
+
+@keyframes fadein {
+    from { opacity: 0.0;}
+    to { opacity: 1.0;}
+}
+
+/***************
+ * MAIN SETUP *
+***************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-rendering: optimizeLegibility;
+    background-color: #fff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/***************
+ * REUSABLE *
+***************/
+
+h1,
+h2,
+h3 {
+    color: #000000;
+    font-weight: 400;
+    padding: 0;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 300%;
+    font-weight: 300;
+}
+
+h1:after {
+    border-bottom: 1px solid #000000;
+    content: " ";
+    display: block;
+    width: 150px;
+    margin: 30px auto 0px; 
+}
+
+h2 {
+    font-size: 200%;
+    font-weight: 300;
+}
+
+h3 {
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 180%;
+}
+
+h4:after {
+    border-bottom: 1px solid #000000;
+    content: " ";
+    display: block;
+    margin: 30px auto 30px; 
+}
+
+section,
+footer {
+    padding: 75px 0;
+}
